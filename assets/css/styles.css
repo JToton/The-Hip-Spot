@@ -70,9 +70,11 @@ aside {
 }
 
 /*Equal Width for Both Asides
-    Border radius and remove*/
+    Border radius and remove
+        Add Text Color*/
 .aside-1,
 .aside-2 {
+  color: white;
   flex: 1;
   border-radius: 10px;
   border: none;
@@ -92,6 +94,10 @@ aside {
 footer {
   color: white;
   background-color: lightcoral;
+}
+
+.portfolio {
+  color: white;
 }
 
 /* Drk Mode Changes to style */

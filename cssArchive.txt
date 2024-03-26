@@ -1,0 +1,59 @@
+/* Header Section */
+/* Webpage Background Color */
+body {
+  background-color: #d9dcd6;
+}
+
+/* Top left "My First Blog" Text / Background font, color & location */
+.header {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #894ad5;
+  color: #ffffff;
+}
+
+/*Top Right 🌞
+    Displays in line with above css block*/
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+/*Space b/w Left edge of Element for 🌞*/
+.header nav ul li {
+  margin-left: 25px;
+}
+
+/*Top Right Nav Links
+    Controls location & font/size*/
+.header nav {
+  margin-top: 15px;
+  margin-bottom: ;
+  margin-right: 20px;
+  margin-left: 20px;
+  float: right;
+  font-size: 50px;
+}
+
+/*Top Right Nav Text Color*/
+.header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* Footer Section */
+/*Available Text Space, float interactions,
+    font style, & bottom center alignment.*/
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+/*Text Size*/
+.footer h2 {
+  font-size: 20px;
+}

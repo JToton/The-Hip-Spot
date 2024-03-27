@@ -3,26 +3,61 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>The Hip Spot</title>
   </head>
   <body>
-    <!--TODO: Create a Header.-->
+    <!-- ! Header to contain blog name and buttons. -->
     <header class="header">
       <h1 class="blog-label">My First Blog</h1>
+      <button class="forward-button">🢂 | Blog Page</button>
       <button class="mode-toggle">
         <span class="sun-icon">🌞</span>
       </button>
     </header>
 
-    <!--TODO: Create form Content Container.-->
-
     <aside>
-      <div class="aside-1">Aside Number 1</div>
-      <div class="aside-2">Aside Number 2</div>
+      <!-- ! Left aside containing the descript of the blog  -->
+      <div class="aside-1">
+        Welcome to my personal blog, a go-to destination for jotting down my
+        thoughts and ideas! Here, I can unleash my creativity and organize my
+        musings effortlessly. With dedicated sections for a username, title, and
+        content, each serves as a form that seamlessly submits to the blog page.
+        Simply enter a desired username, captivating title, and compelling
+        content into their respective fields, then hit the submit button to see
+        a masterpiece come to life on the blog page. Whether it's a profound
+        reflection, an intriguing story, or simply a momentary thought, this
+        platform is my canvas to express myself freely.
+      </div>
+      <!-- ! Right aside containing the forms for the the blog  -->
+      <div class="aside-2">
+        <form id="blog-form">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          /><br /><br />
+
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required /><br /><br />
+
+          <label for="content">Content:</label>
+          <textarea id="content" name="content" required></textarea><br /><br />
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
     </aside>
 
-    <!--TODO: Create a Footer.-->
+    <!-- ! Footer with link to Portfolio and info.-->
     <footer>
       <h2>
         Portfolio:
@@ -33,7 +68,10 @@
       <p>&copy; 2024 | Jacob Toton | Coding Bootcamp |</p>
     </footer>
 
-    <!--TODO: LINK form.js-->
+    <!-- ! Link foward button script from forward.js-->
+    <script src="./assets/js/forward.js"></script>
+
+    <!-- ! Link light/dark mode toggle script from form.js -->
     <script src="./assets/js/form.js"></script>
   </body>
 </html>

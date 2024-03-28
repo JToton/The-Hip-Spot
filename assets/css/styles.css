@@ -37,7 +37,8 @@ h1 {
 /* FORWARD BUTTON SECTION */
 /* FWRD size, color control, cursor styling. */
 .forward-button {
-  font-size: 15px;
+  font-size: 20px;
+  color: white;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
@@ -85,7 +86,7 @@ aside {
   margin: 10px; /* Add margin to create space */
 }
 
-/* Spacing and Border for both asides */
+/* Spacing and Border for both asides. */
 .aside-1 {
   border: 2px solid #000;
   border-radius: 8px;
@@ -98,6 +99,71 @@ aside {
   border-radius: 8px;
   text-align: left;
   font-size: 20px;
+}
+
+/* FORM SUBMISSION SECTION */
+/* Set margin and text location. */
+.aside-2 h1 {
+  margin-top: 20;
+  text-align: center;
+}
+/* Flex control and direction. */
+#blog-form {
+  display: flex;
+  flex-direction: column;
+}
+/* Space below label and field. */
+#blog-form label {
+  margin-bottom: 5px;
+}
+/* Make Fields Container Width 
+  Include padding / border. */
+#blog-form input,
+#blog-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Button at the bottom
+    Transp Background, Text and Border Color
+      size, width and padding. */
+#blog-form button {
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  border-style: solid;
+  font-size: 20px;
+  width: 100%;
+  margin-top: auto;
+  cursor: pointer;
+}
+
+/* Container for each blog post */
+.blog-post {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Title font size / margin. */
+.blog-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Username font size / margin. */
+.blog-username {
+  font-size: 14px;
+  margin-top: auto;
+}
+
+/* Content font size. */
+.blog-content {
+  font-size: 16px;
 }
 
 /* FOOTER SECTION */
@@ -134,4 +200,11 @@ footer {
 
 .dark-mode .sun-icon {
   color: #ffdf00;
+}
+
+/* Media query for stacking asides */
+@media (max-width: 768px) {
+  aside {
+    flex-direction: column;
+  }
 }

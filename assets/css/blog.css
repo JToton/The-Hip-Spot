@@ -1,12 +1,14 @@
+/*  Main Body Overall style
+    Font, color, margins and flex. */
 body {
   font-family: "Sumana", sans-serif;
   background-color: #d9dcd6;
-  margin: 0; /* Remove default body margin */
+  margin: 20;
   display: flex;
   flex-direction: column;
 }
 
-/* Container Styles [border and padding] */
+/* Container Styles [border and padding]. */
 header,
 footer,
 aside {
@@ -18,6 +20,8 @@ aside {
   font-family: "Oswald", sans-serif;
 }
 
+/* Header Overall Styling
+    colors, flex control and justification. */
 header {
   color: white;
   background-color: lightcoral;
@@ -25,12 +29,13 @@ header {
   justify-content: space-between;
 }
 
+/* <h1> Margin Control. */
 h1 {
   margin-bottom: 0;
 }
 
 /* BACK BUTTON SECTION */
-/* Text size for sun icon */
+/* BTN size, color control, cursor styling. */
 .back-button {
   font-size: 15px;
   background-color: transparent;
@@ -39,8 +44,8 @@ h1 {
   border-style: none;
 }
 
-/* SUN ICON SECTION */
-/* Add styles for the mode toggle button */
+/* SUN / MOON ICON SECTION */
+/* Add styles for the mode toggle button. */
 .mode-toggle {
   background-color: transparent;
   border: none;
@@ -48,29 +53,27 @@ h1 {
   padding: 0;
 }
 
-/* Text size for sun icon */
+/* Text size for sun / moon icon. */
 .sun-icon {
   font-size: 25px;
 }
 
-/* Additional style for (sun) drk mode */
+/* Additional style for dark mode. */
 .dark-mode .sun-icon {
   color: white;
 }
 
 /* ASIDE SECTION */
-/* Aside 1 (and 2) Styling
-      Position */
-
+/* Aside 1 Styling
+      Color, and Position. */
 aside {
   background-color: lightcoral;
   display: flex;
   position: relative;
 }
 
-/*Equal Width for Both Asides
-      Border radius and remove
-          Add Text Color*/
+/* Aside 1 color, flex control,
+    container border and radius shape. */
 .aside-1 {
   color: white;
   flex: 1;
@@ -78,13 +81,51 @@ aside {
   border: none;
 }
 
-/* Spacing between asides */
+/* Margin control. */
 .aside-1 {
   margin-right: 15px;
 }
 
+/* Blog Post Containers */
+/* Background / Border Color*/
+.blog-post {
+  background-color: lightcoral; /* White background */
+  border: 2px solid #000; /* Black border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px; /* Padding for spacing */
+  margin-bottom: 20px; /* Spacing between blog posts */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Stack elements vertically */
+}
+
+/* Title styling 
+    Font size and space below. */
+.blog-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Username styling 
+    Font size and username bottom. */
+.blog-username {
+  font-size: 14px;
+  margin-top: auto;
+}
+
+/* Content container
+    Border above content, padding. */
+.blog-content-container {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+/* Content styling, size. */
+.blog-content {
+  font-size: 16px;
+}
+
 /* FOOTER SECTION */
-/* Footer Styling */
+/* Footer colors. */
 footer {
   color: white;
   background-color: lightcoral;
@@ -117,4 +158,17 @@ footer {
 
 .dark-mode .sun-icon {
   color: #ffdf00;
+}
+
+/* Blog Container(s) Dark Mode Colors */
+.dark-mode .blog-post {
+  background-color: #444;
+}
+
+.dark-mode .blog-content-container {
+  background-color: #444;
+}
+
+.dark-mode .blog-content {
+  background-color: #444;
 }

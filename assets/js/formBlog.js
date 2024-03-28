@@ -1,13 +1,13 @@
-// TODO: Create a js script to handle the local storage usage of the forms -> blog functionality.
-
+// * Create a js script to handle the local storage usage of the forms -> blog functionality.
+// * This grabs the info from local storage and applies to blog
 document.addEventListener("DOMContentLoaded", function () {
-  // Retrieve saved blog posts from local storage
+  // * Retrieve saved blog posts from local storage.
   const blogPosts = JSON.parse(localStorage.getItem("blogPosts")) || [];
 
-  // Get the container element for displaying blog posts
+  // * Get the container element for displaying blog posts.
   const blogList = document.getElementById("blog-list");
 
-  // Iterate through each blog post and display them as a list
+  // * Iterate through each blog post and display them as a list.
   blogPosts.forEach(function (post) {
     const postElement = document.createElement("div");
     postElement.classList.add("blog-post");

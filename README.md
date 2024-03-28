@@ -9,7 +9,7 @@ visitors to navigate and explore the content.
 
 ## Link to Deployed Application.
 
-• [https://jtoton.github.io/Payroll-Incorporated/]
+• [https://jtoton.github.io/The-Hip-Spot/]
 
 ## Table of Contents:
 

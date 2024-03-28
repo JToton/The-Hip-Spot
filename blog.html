@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./assets/css/blog.css" />
     <title>The Hip Spot</title>
   </head>
@@ -16,7 +14,7 @@
     <!-- * Header to contain blog name and buttons. -->
     <header class="header">
       <h1 class="blog-label">My First Blog</h1>
-      <button class="back-button">🢀 | Main Page</button>
+      <button class="back-button">🢀 | Home |</button>
       <button class="mode-toggle">
         <span class="sun-icon">🌞</span>
       </button>
@@ -24,8 +22,11 @@
 
     <!-- * Middle container for the content of the blog  -->
 
+    <!-- * Container for displaying blog posts -->
     <aside>
-      <div class="aside-1">Aside Number 1</div>
+      <div class="aside-1" id="blog-list">
+        <!-- Blog posts will be dynamically added here -->
+      </div>
     </aside>
 
     <!-- * Footer with link to Portfolio and info.-->
@@ -42,7 +43,10 @@
     <!-- * Link back button script from back.js-->
     <script src="./assets/js/back.js"></script>
 
-    <!--* Link light/dark mode toggle script from blog.js -->
-    <script src="./assets/js/form.js"></script>
+    <!-- * Link light/dark mode toggle script from blog.js -->
+    <script src="./assets/js/blog.js"></script>
+
+    <!-- Link local storage script from formBlog.js -->
+    <script src="./assets/js/formBlog.js"></script>
   </body>
 </html>

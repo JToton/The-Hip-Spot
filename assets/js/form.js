@@ -1,16 +1,33 @@
-// TODO: Create a JS script to handle the button states.
-// TODO: Additionally, add the ability to switch the icons when pressed.
-document.addEventListener("DOMContentLoaded", function () {
-  const modeToggle = document.querySelector(".mode-toggle");
-  const body = document.querySelector("body");
-  const sunIcon = document.querySelector(".sun-icon");
+// TODO: Create a js script to handle the local storage usage of the forms -> blog functionality.
 
-  modeToggle.addEventListener("click", function () {
-    body.classList.toggle("dark-mode"); // Toggle dark mode class on body
-    if (body.classList.contains("dark-mode")) {
-      sunIcon.textContent = "🌙"; // Change sun icon to moon icon in dark mode
-    } else {
-      sunIcon.textContent = "🌞"; // Change moon icon back to sun icon in light mode
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("blog-form");
+
+  form.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Get form values
+    const username = document.getElementById("username").value;
+    const title = document.getElementById("title").value;
+    const content = document.getElementById("content").value;
+
+    // Create a blog post object
+    const blogPost = {
+      username: username,
+      title: title,
+      content: content,
+    };
+
+    // Retrieve existing blog posts from local storage or create an empty array
+    let blogPosts = JSON.parse(localStorage.getItem("blogPosts")) || [];
+
+    // Add the new blog post to the array
+    blogPosts.push(blogPost);
+
+    // Save the updated array back to local storage
+    localStorage.setItem("blogPosts", JSON.stringify(blogPosts));
+
+    // Redirect to the blog.html page
+    window.location.href = "blog.html";
   });
 });

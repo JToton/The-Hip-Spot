@@ -4,6 +4,7 @@ body {
   font-family: "Sumana", sans-serif;
   background-color: #d9dcd6;
   margin: 20;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -24,7 +25,7 @@ aside {
     colors, flex control and justification. */
 header {
   color: white;
-  background-color: lightcoral;
+  background-color: #1b6cab;
   display: flex;
   justify-content: space-between;
 }
@@ -68,9 +69,10 @@ h1 {
 /* Aside 1 / 2 Styling
       Color, and Position. */
 aside {
-  background-color: lightcoral;
+  background-color: #1b6cab;
   display: flex;
   position: relative;
+  flex-grow: 1;
 }
 
 /* Equal Width for Both Asides
@@ -170,7 +172,8 @@ aside {
 /* Footer Styling */
 footer {
   color: white;
-  background-color: lightcoral;
+  background-color: #1b6cab;
+  margin-top: auto;
 }
 
 .portfolio {
